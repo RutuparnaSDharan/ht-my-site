@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutuparna Here!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
+
+</head>
+<body>
+    <header class="header">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#education">Certifications</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="index.html#contact">Contact Me</a></li>
+        </ul>
+    </header>
+
+    <section class="content-section">
+        <div class="sea layout-box">
+            <div class="container version-a">
+                <div class="images">
+                    <div class="grid image-grid-3-m4">
+                        <img class="image-0" src="images/jaquard.jpg">
+                        <img class="image-1" src="images/jq2.jpg">
+                        <img class="image-3" src="images/jacquardphoto.jpg">
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <h2>The Jacquard Loom</h2>
+                    <p>
+                        Patented in 1804 by Joseph Marie Jacquard, the Jacquard loom used punched cards to automate intricate textile patterns. This innovation influenced early computing, inspiring Babbage's Analytical Engine. Modern looms are computer-controlled, handling thousands of hooks and continuing to impact textile production.
+                    </p>
+                    
+                    <p>Sources:</p>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/Jacquard_machine" target="_blank">Wikipedia - Jacquard Machine</a></li>
+                    </ul>
+                </div>
+                
+        
+                <div class="single-image">
+                    <img class="image-5" src="images/jacquardphoto.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="savanna layout-box">
+            <div class="container version-b">
+                <div class="images">
+                    <div class="grid image-grid-4">
+                          <img class="image-0 " src="images/punched.jpg"> 
+                          <img class="image-1 " src="images/pc2.jpg">
+                          <img class="image-2 " src="images/card-maker.jpg">
+                       </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Punch Cards</h2>
+                    <p>
+                        Punch cards, introduced in the early 19th century by Joseph Marie Jacquard, revolutionized machinery control by automating loom patterns. Jacquard’s system inspired the use of punch cards in computing, an idea admired by Charles Babbage. By the late 19th century, punch cards were also used by railway conductors to record passenger destinations.
+                    </p>
+                    
+                    <p>Sources:</p>
+                    <ul>
+                        <li><a href="https://www.si.edu/spotlight/punch-cards" target="_blank">Smithsonian Institution-Punch Cards</a>
+                    </ul>
+                </div>
+                
+        </div>
+
+        <div class="rainforest layout-box">
+            <div class="container version-a">
+                <div class="images">
+                    <div class="grid image-grid-3-m4">
+                        <img class="image-0 " src="images/ps.jpg">
+                        <img class="image-1" src="images/feature_jacquard.jpg">
+                        <img class="image-3 " src="images/roomofp.jpg">
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Drawbacks of current system</h2>
+                    <p>Physical punched cards are bulky, prone to wear, and labor-intensive to manage, leading to inefficiencies and errors in textile manufacturing. Their inflexibility makes design changes difficult, requiring entirely new sets of cards. This project is needed to replace these outdated systems with digital solutions that offer greater durability, efficiency, and flexibility, streamlining the design process and reducing errors.</p>
+                </div>
+                <div class="single-image">
+                    <img class="image-5 " src="images/roomofp.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="arctic layout-box">
+            <div class="container version-a">
+                <div class="images">
+                    <div class="grid image-grid-4">
+                          <img class="image-0 " src="images/e2.jpeg"> 
+                          <img class="image-1 " src="images/appss.jpeg">
+                          <img class="image-2 " src="images/e3.jpeg">
+                       </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Weavonic</h2>
+                    <p>
+                        Weavonic is a state-of-the-art mobile application designed to transform the textile design process by digitizing traditional punched cards. The app uses mobile camera to capture high-resolution images of the punched cards, which are then processed using an image processing algorithm. This algorithm extract detailed patterns from the images and convert them into bitmap files. These bitmaps can be used as digital punched cards for modern electronic Jacquard looms, thus bridging the gap between historical and contemporary textile manufacturing methods.
+
+                        The application’s architecture incorporates several key technologies to achieve this transformation. It utilizes the mobile camera for image capture, ensuring high-quality input for accurate design extraction. The image processing is handled by advanced algorithms, often leveraging libraries like OpenCV to decode and interpret the card patterns. Once processed, the designs are converted into bitmap files that can be seamlessly integrated with electronic looms. For secure storage and file management, the app employs cloud storage solutions, and it uses the Android SDK for developing the mobile application interface. Additionally, Chaquopy is used to enable Python integration for complex processing tasks, while the Google Drive API facilitates cloud storage and file access. Together, these technologies enable Weavonic to modernize the textile design process by turning traditional punched card data into a digital format that can be used with contemporary weaving technology.                    
+                </div>
+                <div class="single-image">
+                    <img class="image-5" src="images/bpp.png">
+                </div>
+                
+        </div>
+        </section>
+
+    <footer>
+        <p>&copy; 2024 Rutuparna S Dharan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.collapsible').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

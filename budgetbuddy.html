@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Buddy - Expense Tracking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header class="header">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#education">Certifications</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="index.html#contact">Contact Me</a></li>
+        </ul>
+    </header>
+
+    <section class="content-section">
+        <div class="sea layout-box">
+            <div class="container version-b">
+                <div class="images">
+                    <div class="grid image-grid-3-m4">
+                        <!-- Replace with relevant images for Budget Buddy -->
+                        <img class="image-0" src="images/bb1.png">
+                        <img class="image-1" src="images/trans.png">
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Introduction to Budget Buddy</h2>
+                    <p>
+                        Budget Buddy is my very first project, a simple yet effective expense tracking application designed to help users manage their finances with ease. Developed using HTML, CSS, JavaScript, and PHP, it provides a user-friendly interface for tracking income and expenses. Budget Buddy also utilizes MySQL for secure and efficient database management, ensuring that your financial data is stored safely. Whether you're just starting to budget or need a straightforward tool to keep track of your spending, Budget Buddy has got you covered.
+                    </p>
+                </div>
+                
+                <div class="single-image">
+                    <img class="image-5" src="images/budget_feature.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="arctic layout-box">
+            <div class="container version-a">
+                <div class="images">
+                    <div class="grid image-grid-4">
+                        <!-- Replace with relevant images for Budget Buddy -->
+                        <img class="image-0" src="images/contactbb.png"> 
+                        <img class="image-1" src="images/reports.jpg">
+                        <img class="image-2" src="images/integration.jpg">
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Technology Stack</h2>
+                    <p>
+                        Budget Buddy is built using a robust technology stack, including HTML, CSS, JavaScript, PHP, and MySQL. The use of MySQL ensures that all financial data is stored securely, making it easy to manage and retrieve. By leveraging these modern web technologies, Budget Buddy provides a reliable, efficient, and user-friendly experience for managing your finances.
+                    </p>
+                </div>
+                <div class="single-image">
+                    <img class="image-5" src="images/technology.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rutuparna S Dharan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.collapsible').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yum Yum Algorithm</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header class="header">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#education">Certifications</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="index.html#contact">Contact Me</a></li>
+        </ul>
+    </header>
+
+    <section class="content-section">
+        <div class="sea layout-box">
+            <div class="container version-b">
+                <div class="images">
+                    <div class="grid image-grid-3-m4">
+                        <img class="image-0" src="images/index.png" alt="Recipe Image 1">
+                        <img class="image-3" src="images/search.png" alt="Recipe Image 3">
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Yum Yum Algorithm</h2>
+                    <p>
+                        The "Yum Yum Algorithm" revolutionizes your culinary experience by offering a user-centric platform to discover, create, and share recipes. Whether you're looking for a quick meal or a gourmet dish, this website allows you to find recipes by ingredients, cuisine types, and cooking time. It also enables users to share their creations and engage with a community of food enthusiasts.
+                    </p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="savanna layout-box">
+            <div class="container version-b">
+                <div class="images">
+                    <div class="grid image-grid-4">
+                        <img class="image-0" src="images/recipe.png" alt="Recipe Discovery">
+                        <img class="image-1" src="images/trending.png" alt="Interactive Guides">
+                        <img class="image-2" src="images/add.png" alt="Community Sharing">
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Recipe Discovery & Sharing</h2>
+                    <p>
+                        Users can browse a vast collection of recipes and find inspiration for their next meal. The search algorithm allows for precise filtering based on various criteria, while the community feature enables users to share their own recipes and interact with others.
+                    </p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="sea layout-box">
+            <div class="container version-b">
+                <div class="images">
+                    <div class="grid image-grid-3-m4">
+                        <img class="image-0" src="images/guid.png" alt="Cooking Guides">
+                        <img class="image-1" src="images/about.png" alt="Step-by-Step Instructions">
+                        <img class="image-3" src="images/admin.png" alt="User Interface">
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Interactive Cooking Guides</h2>
+                    <p>
+                        The platform provides interactive cooking guides and step-by-step instructions to help users through every stage of meal preparation. From planning to presentation, the guides ensure an enjoyable cooking experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="arctic layout-box">
+            <div class="container version-a">
+                <div class="images">
+                    <div class="grid image-grid-4">
+                        <img class="image-0" src="images/contact.png" alt="API Integration">
+                        <img class="image-2" src="images/messages.png" alt="User Authentication">
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Technology & Security</h2>
+                    <p>
+                        Utilizing technologies like PHP and MySQL for backend and integrating with APIs like MealDB, "Yum Yum Algorithm" ensures a secure and robust platform for recipe management. User authentication and data management are handled efficiently to provide a seamless and secure experience.
+                    </p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rutuparna S Dharan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.collapsible').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

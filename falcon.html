@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falcon 9 Stage 1 Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header class="header">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#education">Certifications</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="index.html#contact">Contact Me</a></li>
+        </ul>
+    </header>
+
+    <section class="content-section">
+        <div class="sea layout-box">
+            <div class="container version-a">
+                <div class="images">
+                    <div class="grid image-grid-3-m4">
+                        <img class="image-0" src="images/falcon.jpg" alt="Falcon 9 Rocket">
+                        <img class="image-3" src="images/falc1.png" alt="Falcon 9 Landing">
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Falcon 9 Stage 1 Analysis</h2>
+                    <p>
+                        This project aims to analyze the Falcon 9 rocket launches by SpaceX to predict the success rate of the first stage landing. SpaceX's ability to reuse the first stage significantly reduces launch costs, and this analysis helps in understanding the factors influencing successful landings. By determining these factors, this project can assist competitors in evaluating their bid against SpaceX.
+                    </p>
+                    
+                    <p>Sources:</p>
+                    <ul>
+                        <li><a href="https://www.spacex.com/falcon9" target="_blank">SpaceX - Falcon 9</a></li>
+                    </ul>
+                </div>
+                <div class="single-image">
+                    <img class="image-5" src="images/falc1.png">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="savanna layout-box">
+            <div class="container version-b">
+                <div class="images">
+                    <div class="grid image-grid-4">
+                        <img class="image-0" src="images/datacoll.png" alt="Data Collection">
+                        <img class="image-1" src="images/scraped.png" alt="Data Analysis">
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Data Collection & Analysis</h2>
+                    <p>
+                        The data for this analysis was collected using the SpaceX API and web scraping from Wikipedia. The dataset includes various launch records and outcomes, which were processed to create a comprehensive analysis of the factors influencing successful landings. Exploratory Data Analysis (EDA) was conducted using SQL and visualization tools to identify patterns and correlations.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="sea layout-box">
+            <div class="container version-b">
+                <div class="images">
+                    <div class="grid image-grid-3-m4">
+                        <img class="image-0" src="images/g11.png" alt="EDA Results">
+                        <img class="image-1" src="images/g21.png" alt="Interactive Map">
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Exploratory Data Analysis & Visualization</h2>
+                    <p>
+                        Exploratory Data Analysis revealed trends and insights related to launch success rates and the factors affecting them. Interactive maps and dashboards were built to visualize the data, providing a clearer understanding of the success rates and operational conditions for the Falcon 9 launches.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="arctic layout-box">
+            <div class="container version-b">
+                <div class="images">
+                    <div class="grid image-grid-4">
+                        <img class="image-0" src="images/confusion.png" alt="ML Models">
+                        <img class="image-2" src="images/db1.png" alt="Confusion Matrix">
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Machine Learning Prediction</h2>
+                    <p>
+                        Machine learning models were developed to predict the success of the Falcon 9 first stage landing. Various classification algorithms were tested and tuned to achieve the best performance. The Decision Tree classifier emerged as the most accurate model, with a detailed confusion matrix showing its strengths and areas for improvement.
+                    </p>
+                    
+                    <p>Sources:</p>
+                    <ul>
+                        <li><a href="https://github.com/RutuparnaSDharan/IBM_DataScience_SpaceX_Falcon9" target="_blank">Github link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rutuparna S Dharan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.collapsible').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

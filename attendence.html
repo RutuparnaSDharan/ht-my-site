@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutuparna Here!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header class="header">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#education">Certifications</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="index.html#contact">Contact Me</a></li>
+        </ul>
+    </header>
+
+    <section class="content-section">
+        <div class="sea layout-box">
+            <div class="container version-a">
+                <div class="images">
+                    <div class="grid image-grid-3-m4">
+                        <img class="image-0" src="images/facerec.jpg">
+                        <img class="image-3" src="images/dfd.png">
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Attendance Monitoring System</h2>
+                    <p>
+                        This project introduces an advanced Attendance Monitoring System that utilizes facial recognition technology to streamline the process of attendance marking. By capturing and analyzing students' facial images, the system can accurately identify individuals and automatically record their attendance, minimizing errors and reducing manual effort.
+                    </p>
+                    
+                </div>
+                
+                <div class="single-image">
+                    <img class="image-5" src="images/dfd.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="savanna layout-box">
+            <div class="container version-b">
+                <div class="images">
+                    <div class="grid image-grid-4">
+                          <img class="image-0" src="images/caping.png"> 
+                          <img class="image-1" src="images/entername.png">
+                          <img class="image-2" src="images/facecap.png">
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Student Registration</h2>
+                    <p>
+                        The system begins with student registration, where each student’s facial data is captured and stored securely. This registration process is crucial as it forms the foundation of the system, ensuring accurate identification during attendance marking. The process involves capturing multiple images of a student's face to ensure high accuracy in various conditions.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="sea layout-box">
+            <div class="container version-a">
+                <div class="images">
+                    <div class="grid image-grid-3-m4">
+                        <img class="image-1" src="images/attend.png">
+                        <img class="image-3" src="images/recog.png">
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Face Detection and Attendance Marking</h2>
+                    <p>
+                        The core of the system is its face detection algorithm, which processes the captured images and compares them with the stored data to identify the student. Once identified, the system automatically marks the student as present. This process is quick, reliable, and requires minimal human intervention, making it ideal for large classrooms and institutions.
+                    </p>
+                </div>
+                <div class="single-image">
+                    <img class="image-5" src="images/recog.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="arctic layout-box">
+            <div class="container version-a">
+                <div class="images">
+                    <div class="grid image-grid-3-m4">
+                        <img class="image-0" src="images/Header-Facial-Recognition.jpg">
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Technologies Used</h2>
+                    <p>
+                        The Attendance Monitoring System leverages several advanced technologies and libraries to ensure its effectiveness and reliability:
+                    </p>
+                    <ul>
+                        <li><strong>OpenCV:</strong> Used for image processing, face detection, and facial recognition.</li>
+                        <li><strong>Python:</strong> Core programming language for implementing the facial recognition algorithms and attendance system.</li>
+                        <li><strong>Numpy:</strong> Utilized for handling and processing the face data.</li>
+                        <li><strong>Pickle:</strong> Used for serializing and de-serializing the face data and student names.</li>
+                        <li><strong>Haar Cascades:</strong> Used for detecting faces in images.</li>
+                        <li><strong>KNeighborsClassifier:</strong> A K-Nearest Neighbors classifier from Scikit-learn used for facial recognition.</li>
+                        <li><strong>Win32com:</strong> Utilized to integrate speech synthesis for auditory feedback.</li>
+                        <li><strong>CSV:</strong> Used for recording attendance data.</li>
+                        <li><strong>Datetime:</strong> Used to timestamp attendance records.</li>
+                    </ul>
+                </div>
+                <div class="single-image">
+                    <img class="image-5" src="images/haar.png">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rutuparna S Dharan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.collapsible').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutuparna Here!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header class="header">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#education">Certifications</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="index.html#contact">Contact Me</a></li>
+        </ul>
+    </header>
+
+    <section class="content-section">
+        <div class="sea layout-box">
+            <div class="container version-b">
+                <div class="images">
+                    <div class="grid image-grid-4">
+                          <img class="image-0" src="images/t1.png"> 
+                          <!-- <img class="image-1" src="images/t3.png">
+                          <img class="image-2" src="images/t4.png"> -->
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Transcriber and Summarizer Chatbot</h2>
+                    <p>
+                        This innovative project utilizes Assembly AI's transcription services to convert audio files into text and further processes the text to provide concise summaries. This chatbot is designed for accessibility, helping users save time and effort by automating the transcription and summarization process.
+                    </p>
+                </div>
+                
+                <div class="single-image">
+                    <img class="image-0" src="images/t1.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="savanna layout-box">
+            <div class="container version-b">
+                <div class="images">
+                    <div class="grid image-grid-4">
+                        <img class="image-0" src="images/t2.png"> 
+                        <img class="image-2" src="images/t4.png">
+                  </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Audio Transcription</h2>
+                    <p>
+                        The project starts with audio transcription. Users can upload their audio files to the chatbot, which leverages Assembly AI to generate accurate and efficient text transcriptions. The transcription process is powered by state-of-the-art machine learning algorithms, ensuring high accuracy.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sea layout-box">
+            <div class="container version-b">
+                <div class="images">
+                    <div class="grid image-grid-4">
+                        <img class="image-0" src="images/t5.png">
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <h2>Summarization and Chatbot</h2>
+                    <p>
+                        After transcription, the summarization tool processes the text using advanced Natural Language Processing (NLP) techniques to create a concise and meaningful summary. This feature is particularly beneficial for students, professionals, and researchers who need to extract key points from lengthy audio recordings.
+                        The chatbot is designed to interact with users for a variety of tasks and incorporates embeddings and Retrieval Augmented Generation (RAG) techniques for intelligent responses. By creating embeddings, the chatbot can better understand and process user queries, ensuring accurate and context-aware interactions.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rutuparna S Dharan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.collapsible').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
